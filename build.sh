@@ -3,7 +3,7 @@
 # Author: Authmane Terki (authmane512)
 # E-mail: authmane512 (at) protonmail.ch
 # Blog: https://medium.com/@authmane512
-# Source: TOADD
+# Source: https://github.com/DroidyTools/android-project-template
 # This project is on public domain
 #
 # Hello! I've made this little script that allow you to init, compile and run an Android Project. I tried to make it as simple as possible to allow you to understand and modify it easily. If you think there is a very important missing feature, don't hesitate to do a pull request on Github and I will answer quickly. Thanks! 
@@ -20,6 +20,7 @@ APKSIGNER="/path/to/android-sdk/build-tools/<your version>/apksigner"
 PLATFORM="/path/to/android-sdk/platforms/android-<your version>/android.jar"
 
 init() {
+	rm -rf .git README.md
 	echo "Making ${PACKAGE_NAME}..."
 	mkdir -p "$PACKAGE_DIR"
 	mkdir obj
