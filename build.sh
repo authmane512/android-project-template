@@ -7,7 +7,10 @@
 # Tutorial: https://medium.com/@authmane512/how-to-do-android-development-faster-without-gradle-9046b8c1cf68
 # This project is on public domain
 #
-# Hello! I've made this little script that allow you to init, compile and run an Android Project. I tried to make it as simple as possible to allow you to understand and modify it easily. If you think there is a very important missing feature, don't hesitate to do a pull request on Github and I will answer quickly. Thanks! 
+# Hello! I've made this little script that allow you to init, compile and run an Android Project.
+# I tried to make it as simple as possible to allow you to understand and modify it easily.
+# If you think there is a very important missing feature, don't hesitate to do a pull request on Github and I will answer quickly.
+# Thanks! 
 
 set -e
 
@@ -76,6 +79,9 @@ case $1 in
 		build
 		;;
 	run)
+		run
+		;;
+	build-run)
 		build
 		run
 		;;
